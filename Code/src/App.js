@@ -1,28 +1,22 @@
-import React, { useState } from "react";
-import CurrentLocation from "./currentLocation";
-import "./App.css";
+// src/App.js
+import React from 'react';
+import TodoList from './TodoList';
+import './App.css';
 
 function App() {
   return (
-    <React.Fragment>
-      <div className="container">
-        <CurrentLocation />
-    
-      </div>
-      <div className="footer-info">
-        <a href="https://www.htmlhints.com/article/how-to-create-toggle-switch/93">
-          Download Source Code
-        </a>{" "}
-        | Developed by{" "}
-        <a target="_blank" href="https://www.gauravghai.dev/">
-          Gaurav Ghai
-        </a>{" "}
-        | Powered by{" "}
-        <a target="_blank" href="https://www.htmlhints.com/">
-          HTML HINTS
-        </a>
-      </div>
-    </React.Fragment>
+    <div className="App">
+      <header className="App-header">
+        {/* Commented out the logo and default React message */}
+        {/* <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p> */}
+
+        {/* TodoList component */}
+        <TodoList />
+      </header>
+    </div>
   );
 }
 
